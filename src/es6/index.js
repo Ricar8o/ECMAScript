@@ -25,6 +25,7 @@ console.log(epicPhrase);
 let epicPhrase2 = `${hello} ${world}`;
 console.log(epicPhrase2);
 
+// CLASE 2
 // Javascript
 let frase = "Un gran poder conlleva una gran responsabilidad \n"
 + "Son las decisiones las que nos hacen ser, quienes somos, y siempre podemos optar por hacer lo correcto.\n";
@@ -70,3 +71,48 @@ console.log(globalVar);
 const a = "b";
 // a = "a"; Lanza un error, una constante jamas cambiara su valor despues de ser definida.
 console.log(a);
+
+// CLASE 3
+let name = 'Ricardo';
+let age = '20';
+// es5
+obj = {name : name , age : age};
+// es6
+obj2 = { name, age };
+console.log(obj2);
+
+
+let names = [
+    {name : 'Andres', age : 20},
+    {name : 'Oscar' , age : 32}
+]
+
+let listOfNames = names.map(function(item){
+    console.log(item.name);
+})
+
+let listOfNames2 = names.map(item => console.log(item.name));
+
+const listOfNames3 = (name,age,country) => {
+    console.log(name, age, country);
+}
+listOfNames3('Peter', 25, "US");
+
+const square = num => num * num;
+console.log( square(5) );
+
+
+const helloPromise = () =>{
+    return new Promise((resolve, reject) => {
+        if (true){
+            resolve('Hey!');
+        }else{
+            reject('Ups!');
+        }
+    });
+}
+
+helloPromise()
+  .then(response => console.log(response))
+  .then(() => console.log('Hello'))
+  .catch(error => console.log(error));
