@@ -73,10 +73,10 @@ const a = "b";
 console.log(a);
 
 // CLASE 3
-let name = 'Ricardo';
-let age = '20';
+let name1 = 'Ricardo';
+let age1 = '20';
 // es5
-obj = {name : name , age : age};
+obj = {name : name1 , age : age1};
 // es6
 obj2 = { name, age };
 console.log(obj2);
