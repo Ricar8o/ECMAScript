@@ -20,4 +20,8 @@
 
 ## Nuevos Operadores lógicos
 
+- x &&= y 
+- x ||= y
+- x ??= y
+
 [Operadores Lógicos](https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Expressions_and_Operators)

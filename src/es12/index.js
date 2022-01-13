@@ -46,6 +46,6 @@ let isTrue = true;
 let isFalse = false;
 console.log(isTrue ||= isFalse); // x || (x = y)
 
-let isTrue = true;
-let isFalse = false;
-console.log(isTrue &&= isFalse); // x ?? (x = y)
+let isTrue = undefined;
+let isFalse = true;
+console.log(isTrue ??= isFalse); // x ?? (x = y)
